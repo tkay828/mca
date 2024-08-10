@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MCA</title>
+        <header>
+            <meta http-equiv="X-UA-Compatible content='IE=edge">
+            <meta  name="viewport" content="width=device-width, initial-scale=1"/>
+            <link rel="stylesheet"href="nav.css">
+            <link rel="stylesheet"href="music.css">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet"href="footer.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+
+    </head>
+    <style>
+        .vidoe{
+            border: 2px solid black;
+            margin-left: 20%;
+            width: 60%;
+            background-color: rgba(0, 0, 0, 0.174);
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 10%;
+
+        }
+        .we{
+            margin-top: 5%;
+            border-radius: 20px;
+            width: 450px;
+            height: 450px;
+        }
+        .audi{
+            width: 45px;
+        }
+        @media only screen and (min-width: 600px) and (max-width: 1024px) {
+            .vidoe{
+            border: 2px solid black;
+            margin-left: 0%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.174);
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 18%;
+
+        }
+        .we{
+            margin-top: 5%;
+            border-radius: 20px;
+            width: 350px;
+            height: 350px;
+        }
+        .audi{
+            width: 45px;
+        }
+
+            
+        }
+        @media only screen and (min-width: 20px) and (max-width: 600px) {
+            .vidoe{
+            border: 2px solid black;
+            margin-left: 0%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.174);
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 25%;
+
+        }
+        .we{
+            margin-top: 5%;
+            border-radius: 20px;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 5%;
+        }
+        .audi{
+            width: 45px;
+        }
+
+            
+        }
+
+    </style>
+    <header>
+        
+        <i class="material-icons" id="nav_menu" onclick="show()"style="font-size: 40px; color: white;">menu</i>
+        <img src="flogo.png"class="first_logo">
+        <nav id="nav">
+            <i class="material-icons"id="nav_close"onclick="hide()">close</i>
+           
+            
+            <ul class="nav_bar">
+                <li><a href="index.html"> home</a></li>
+                <li><a href="ministry.html">ministry</a></li>
+                <li><a href="music.html">music</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <span>
+               
+            
+            </ul>
+        
+         
+        </nav>
+        <img src="ligth_mode.png"class="light_mode"id="themeButton"/>
+    </header>
+    <body onload="myfunc()"id="body">
+        <div class="vidoe">
+            <img src="new.jpg"class="we"><br><br>
+            <audio controls  download="wofre.mp3">
+                <source src="wofre.mp3" type="audio/mpeg"class="audi" download="wofre.mp3">
+              
+              </audio>
+              <ul style="list-style: none;font-size: large;">
+                <li>Wofre No Jesus - Comfort Acheampong</li><br>
+                <li>Date: 10th October 1992.</li><br>
+                <li> First Album release</li>
+            </ul>
+        </div>
+        <footer>
+            <p class="see"> <input type="search" placeholder="Search"class="fa fa-search"><i class="fa fa-search"id="se"></i></p>
+             <img src="slogo.png"class="footer_img">
+             <div class="back_to_top"><a href="#"><i class ="fa fa-arrow-up"id="ho"></i></a><br>Back to top</div>
+             <ul class="footer_1">
+              <li class="li"><i class="material-icons" id="place">place</i><a href="https://maps.google.com">Tema community four - Ghana</a></li>
+              <li class="li"><i class="fa fa-whatsapp"id="me"></i><a href="https://wa.me/2330558459582"> (+233) 0558459582</a></li>
+              <li class="li"><i class="material-icons"id="mail">email</i><a href="https://mail.google.com">comfortacheampong426@gmail.com</a></li>
+             </ul>
+             <hr>
+             <div class="s_logo">
+              <span class="t_logo"><a href="https://www.facebook.com/@Comfort Gyasi Acheampong"><i class="fa fa-facebook"></i></a></span>
+              <span class="t_logo"><a href="https://www.youtube.com/@minstrelcomfortacheampong5833"><i class="fa fa-instagram"></i></a></span>
+              <span class="t_logo"><a href="https://www.tiktok.com/@minstrelcomfortach"><i class="material-icons">tiktok</i></a></span>
+              <span class="t_logo"><a href="https://www.youtube.com/@minstrelcomfortacheampong5833"><i class="fa fa-youtube-play"></i></a></span>
+             </div>
+             <div class="footer_2">
+              <a href="#"class="de">Terms and conditions</a>
+              <a href="#"class="de">Blog</a>
+              <a href="#"class="de">Contact</a>
+              <a href="#"class="de">About me</a>
+             </div>
+            <center>Copyright @2024 All rights reserved | This website is made with love by T.K</center>
+        
+          </footer>
+          <script src="music.js"></script>
+          </div>
+        </body>
+          
+        </html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MCA</title>
+        <header>
+            <meta http-equiv="X-UA-Compatible content='IE=edge">
+            <meta  name="viewport" content="width=device-width, initial-scale=1"/>
+            <link rel="stylesheet"href="nav.css">
+            <link rel="stylesheet"href="music.css">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet"href="footer.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+
+    </head>
+    <header>
+        
+        <i class="material-icons" id="nav_menu" onclick="show()"style="font-size: 40px; color: white;">menu</i>
+        <img src="flogo.png"class="first_logo">
+        <nav id="nav">
+            <i class="material-icons"id="nav_close"onclick="hide()">close</i>
+           
+            
+            <ul class="nav_bar">
+                <li><a href="index.html"> home</a></li>
+                <li><a href="ministry.html">ministry</a></li>
+                <li><a href="music.html">music</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <span>
+               
+            </ul>
+        
+         
+        </nav>
+        <img src="ligth_mode.png"class="light_mode"id="themeButton"/>
+    </header>
+    <style>
+        .pic{
+            margin-bottom: 1px;
+            margin-top: 15%;
+            display: inline-flex;
+            width: 100%;
+        
+            gap: 20px;
+        }
+        .album2_left{
+            margin-left: 5%;
+            width: 400px;
+            height: 450px;
+
+        }
+      .event{
+        font-size: large;
+        background-color: blueviolet;
+        display: block;
+        border-radius: 30px;
+        width: 60%;
+        height: 65%;
+        
+      }
+      .album2_right{
+        margin: 5%;
+        width: 300px;
+        height: 300px;
+        margin-right: none;
+      }
+       a{
+        text-decoration: none;
+
+        color: white;
+      }
+      a{
+        text-decoration: underline;
+      }
+      .word{
+        margin-top: 5%;
+        position: absolute;
+    
+      }
+      .spotify{
+        width: 50px;
+        height: 50px;
+        margin: 5%;
+        border-radius: 20px;
+        float: right;
+      }
+      #play_now{
+        font-size: 70px; 
+        position: absolute; 
+        top: 480px;
+        right: 70px
+        }
+      #saver{
+        font-size: 30px;
+    }
+    @media only screen and (min-width:850px) and (max-width: 1050px) {
+        .pic{
+            display: block;
+        }
+        .event{
+            width: 95%;
+            height: 80%;
+        }
+        #play_now{
+            position: absolute;
+            color: black;
+            top: 900px;
+            right: 120px;
+        }
+    }
+    @media only screen and (min-width:600px) and (max-width: 850px) {
+        .pic{
+            display: block;
+        }
+        .album2_left{
+          margin-top: 10%;
+            margin-left: 5%;
+            width: 400px;
+            height: 450px;
+
+        }
+        .spotify{
+        width: 40px;
+        height: 40px;
+        margin: 4%;
+        border-radius: 20px;
+        float: right;
+      }
+      .album2_right{
+        margin: 5%;
+        width: 250px;
+        height: 250px;
+        margin-right: none;
+      }
+        .event{
+          margin-top: 5%;
+          font-size: large;
+            width: 100%;
+            height: 85%;
+        }
+        #play_now{
+            position: absolute;
+            color: black;
+            top: 830px;
+            right: 80px;
+        }
+    }
+    @media only screen and (min-width: 499px) and (max-width: 600px) {
+      .pic{
+            display: block;
+        }
+        .album2_left{
+          margin-top: 5%;
+            margin-left: 5%;
+            width: 300px;
+            height: 350px;
+
+        }
+        .album2_right{
+        margin: 5%;
+        width: 200px;
+        height: 200px;
+        margin-right: none;
+      }
+        .spotify{
+        width: 35px;
+        height: 35px;
+        margin: 3%;
+        float: right;
+      }
+        .event{
+          margin-top: 5%;
+          font-size: large;
+            width: 100%;
+            height: 70%;
+        }
+        #play_now{
+          font-size: 50px;
+            position: absolute;
+            color: black;
+            top: 650px;
+            right: 40px;
+        }
+        #saver{
+        font-size: 20px;
+    }
+
+
+    }
+    @media only screen and (min-width: 20px) and (max-width: 499px) {
+      .pic{
+            display: block;
+        }
+        .album2_left{
+          margin-top: 15%;
+            margin-left: 5%;
+            width: 200px;
+            height: 250px;
+
+        }
+        .album2_right{
+        margin: 3%;
+        width: 100px;
+        height: 160px;
+        margin-right: none;
+      }
+        .spotify{
+        width: 24px;
+        height: 24px;
+        margin: 4%;
+        float: right;
+      }
+        .event{
+          margin-top: 2%;
+          font-size: small;
+            width: 100%;
+        }
+        #play_now{
+          font-size: 30px;
+            position: absolute;
+            color: black;
+            top: 505px;
+            right: 40px;
+        }
+        #saver{
+        font-size: 20px;
+    }
+    
+
+    }
+    </style>
+    <body>
+
+
+        <div class="pic">
+            <img src="album4.png"class="album2_left"><br>
+           
+            <div class="event">
+                <img src="album4.png"class="album2_right">
+                <a href="https://open.spotify.com/artist/3n9F9DUpBeIKK8zMHE9Rek"><img src="spotify.png"class="spotify"></a>
+
+                <a href="https://youtu.be/gGDqZP_Fqp0?si=aMiVAZJnhcL-aPHG"> <span class="word"><h1 style="text-decoration: underline;">Mother's Day</h1><br>
+                    <span class="preview">Music:</span> Comfort Acheampong<br><br>
+              <span class="n"> <i class="material-icons"id="saver">add_circle_outline</i> Save on Spotify</span></span></a>
+              <span class="play"><a href="https://open.spotify.com/album/7ALTQZOcx0w18zhbUwPXQx"><i class="material-icons" id="play_now">play_circle_outline</i></a></span>
+            </div>
+             
+        </div>
+        <ul style="list-style: none;font-size: larger;">
+            <li>Mother's Day - Comfort Acheampong</li><br>
+            <li>Date: 15th june 2024.</li><br>
+            <li>Lastest Album release</li>
+        </ul>
+
+
+
+
+
+
+
+        <footer>
+            <p class="see"> <input type="search" placeholder="Search"class="fa fa-search"><i class="fa fa-search"id="se"></i></p>
+             <img src="slogo.png"class="footer_img">
+             <div class="back_to_top"><a href="#"><i class ="fa fa-arrow-up"id="ho"></i></a><br>Back to top</div>
+             <ul class="footer_1">
+              <li class="li"><i class="material-icons" id="place">place</i><a href="https://maps.google.com">Tema community four - Ghana</a></li>
+              <li class="li"><i class="fa fa-whatsapp"id="me"></i><a href="https://wa.me/2330558459582"> (+233) 0558459582</a></li>
+              <li class="li"><i class="material-icons"id="mail">email</i><a href="https://mail.google.com">comfortacheampong426@gmail.com</a></li>
+             </ul>
+             <hr>
+             <div class="s_logo">
+              <span class="t_logo"><a href="https://www.facebook.com/@Comfort Gyasi Acheampong"><i class="fa fa-facebook"></i></a></span>
+              <span class="t_logo"><a href="https://www.youtube.com/@minstrelcomfortacheampong5833"><i class="fa fa-instagram"></i></a></span>
+              <span class="t_logo"><a href="https://www.tiktok.com/@minstrelcomfortach"><i class="material-icons">tiktok</i></a></span>
+              <span class="t_logo"><a href="https://www.youtube.com/@minstrelcomfortacheampong5833"><i class="fa fa-youtube-play"></i></a></span>
+             </div>
+             <div class="footer_2">
+              <a href="#"class="de">Terms and conditions</a>
+              <a href="#"class="de">Blog</a>
+              <a href="#"class="de">Contact</a>
+              <a href="#"class="de">About me</a>
+             </div>
+            <center>Copyright @2024 All rights reserved | This website is made with love by T.K</center>
+      
+          </footer>
+          <script src="music.js"></script>
+          </div>
+    </body>
+</html>

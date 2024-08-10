@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MCA</title>
+        <header>
+            <meta http-equiv="X-UA-Compatible content='IE=edge">
+            <meta  name="viewport" content="width=device-width, initial-scale=1"/>
+            <link rel="stylesheet"href="nav.css">
+            <link rel="stylesheet"href="contact.css">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet"href="footer.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+
+    </head>
+    <header>
+        
+        <i class="material-icons" id="nav_menu" onclick="show()"style="font-size: 40px; color: white;">menu</i>
+        <img src="flogo.png"class="first_logo">
+        <nav id="nav">
+            <i class="material-icons"id="nav_close"onclick="hide()">close</i>
+           
+            
+            <ul class="nav_bar">
+                <li><a href="index.html"> home</a></li>
+                <li><a href="ministry.html">ministry</a></li>
+                <li><a href="music.html">music</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <span>
+               
+            
+            </ul>
+        
+         
+        </nav>
+        <img src="ligth_mode.png"class="light_mode"id="themeButton"/>
+    </header>
+    <body onload="myfunc()"id="body">
+        <div id="loader-container">
+            <div class="flipping-cards">
+                <div class="card">W</div>
+                <div class="card">e</div>
+                <div class="card">l</div>
+                <div class="card">c</div>
+                <div class="card">o</div>
+                <div class="card">m</div>
+                <div class="card">e</div>
+            </div>
+        </div>
+        <div id="myDiv">
+          <div class="nav_img"></div>
+<div id="jo">
+<span class="jo">
+    <div class="container mx-auto"id="form">
+      <div class="max-w-xl mx-auto my-10 bg-white p-5 rounded-md shadow-sm"id="form2">
+        <div class="text-center">
+          <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200"id="con">
+            Contact Me
+          </h1>
+          <p class="text-gray-400 dark:text-gray-400"id="mar">
+            Fill up the form below to send me a message.
+          </p>
+        </div>
+        <div class="m-7"id="form1">
+          <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+            <input type="hidden" name="access_key" value="cd1a09fc-f4d8-4fe9-b6ac-e28245e6ef5e" />
+            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+  
+            <div class="flex mb-6 space-x-4"id="form1">
+              <div class="w-full md:w-1/2">
+                <label for="fname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">First Name:</label><br>
+                <input type="text" name="name" id="first_name" placeholder="Joseph" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                  Please provide your first name.
+                </div>
+              </div><br>
+              <div class="w-full md:w-1/2">
+                <label for="lname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Last Name:</label><br>
+                <input type="text" name="last_name" id="lname" placeholder="Falasha" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                  Please provide your last name.
+                </div>
+              </div>
+            </div>
+  <br>
+            <div class="flex mb-6 space-x-4">
+              <div class="w-full md:w-1/2">
+                <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address:</label><br>
+                <input type="email" name="email" id="email" placeholder="example@company.com" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                <div class="empty-feedback text-red-400 text-sm mt-1">
+                  Please provide your email address.
+                </div>
+                <div class="invalid-feedback text-red-400 text-sm mt-1">
+                  Please provide a valid email address.
+                </div>
+              </div>
+  <br>
+              <div class="w-full md:w-1/2">
+                <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400">Phone Number:</label><br>
+                <input type="text" name="phone" id="phone" placeholder="+233 (555) 1234-567" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+  
+                <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                  Please provide your phone number.
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="mb-6">
+              <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message:</label><br>
+  
+              <textarea rows="5" name="message" id="message" placeholder="Your Message....." class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" required></textarea>
+              <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                Please enter your message.
+              </div>
+            </div>
+            <br>
+            <div class="mb-6">
+              <button type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none"id="button_submit">
+                Send Message
+              </button>
+            </div>
+            <p class="text-base text-center text-gray-400" id="result"></p>
+            <script src="contact.js"></script>
+          </form>
+        </div>
+      </div>
+    </div>
+   
+</span>
+</div>
+<div class="contact-loca">
+  <span class="loca">
+    <h1 style="text-align: center ;">Do you Have Questions?</h1>
+  <p class="locaa"> 
+    If you have any questions you can get in contact with me  by
+   filling this form. 
+  </p>
+
+
+  <ul>
+    <li><i class="material-icons">place</i>Tema community four //Segico flat-Ghana</li><br>
+    <li><i class="material-icons">phone</i>(+233) 0558459482<br>
+                                          (+233) 0243030112</li><br>
+    <li><i class="material-icons">email</i>comfortacheampong426@gmail.com</li>
+
+  </ul>
+</span>
+
+</div>
+
+  <footer>
+    <p class="see"> <input type="search" placeholder="Search"class="fa fa-search"><i class="fa fa-search"id="se"></i></p>
+     <img src="slogo.png"class="footer_img">
+     <div class="back_to_top"><a href="#"><i class ="fa fa-arrow-up"id="ho"></i></a><br>Back to top</div>
+     <ul class="footer_1">
+      <li class="li"><i class="material-icons" id="place">place</i><a href="https://maps.google.com">Tema community four - Ghana</a></li>
+      <li class="li"><i class="fa fa-whatsapp"id="me"></i><a href="https://wa.me/2330558459582"> (+233) 0558459582</a></li>
+      <li class="li"><i class="material-icons"id="mail">email</i><a href="https://mail.google.com">comfortacheampong426@gmail.com</a></li>
+     </ul>
+     <hr>
+     <div class="s_logo">
+      <span class="t_logo"><a href="https://www.facebook.com/@Comfort Gyasi Acheampong"><i class="fa fa-facebook"></i></a></span>
+      <span class="t_logo"><a href="https://www.youtube.com/@minstrelcomfortacheampong5833"><i class="fa fa-instagram"></i></a></span>
+      <span class="t_logo"><a href="https://www.tiktok.com/@minstrelcomfortach"><i class="material-icons">tiktok</i></a></span>
+      <span class="t_logo"><a href="https://www.youtube.com/@minstrelcomfortacheampong5833"><i class="fa fa-youtube-play"></i></a></span>
+     </div>
+     <div class="footer_2">
+      <a href="#"class="de">Terms and conditions</a>
+      <a href="#"class="de">Blog</a>
+      <a href="#"class="de">Contact</a>
+      <a href="#"class="de">About me</a>
+     </div>
+    <center>Copyright @2024 All rights reserved | This website is made with love by T.K</center>
+
+  </footer>
+  <script src="main.js"></script>
+  </div>
+</body>
+  
+</html>

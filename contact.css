@@ -1,0 +1,363 @@
+.invalid-feedback,
+.empty-feedback {
+  display: none;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+    color: #dc3545;
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+    color: red;
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: #dc3545;
+}
+body{
+    background-color: white;
+    transition: all 0.5s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color: black;
+}
+#myDiv{
+    display: none;
+}
+.nav_img{
+    background-image:  url(flogo.png);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 1s ease-in-out;
+    border-radius: 10px;
+    background-size: 50%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    animation: view 2s ;
+    animation-iteration-count: 2;
+}
+@keyframes view {
+     0%{
+        background-position: top;
+     }
+     50%{
+        background-position: center;
+     }
+    100%{
+
+        background-position: bottom;
+     }
+    
+}
+#loader-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    transition: display 1s ease;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.flipping-cards {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    width: 250px; /* Adjust based on the number of cards and their width */
+}
+
+.card {
+    width: 200px;
+    height: 60px;
+    background-color: rgba(165, 43, 226, 0.948);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 4px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    animation: flip 2s;
+
+}
+
+.card:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.card:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.card:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+.card:nth-child(6) {
+    animation-delay: 1.5s;
+}
+
+.card:nth-child(7) {
+    animation-delay: 1.8s;
+}
+
+@keyframes flip {
+    0%, 100% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+}
+#jo{
+    background-image: url(blog-01.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#con{
+    text-align: center;
+}
+.jo{
+    text-align: center;
+}
+#form{
+    width: 50%;
+    margin-top: 2%;
+    text-align: left;
+    font-size: large;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+}
+#form2{
+    margin-left: 2%;
+    border: 1px solid black;
+}
+#form1,#mar{
+    margin-left: 3%;
+}
+#first_name,#lname,#email,#phone{
+    width: 100%;
+    height: 45px;
+    font-size: large;
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    
+}
+#first_name::placeholder,#lname::placeholder,#email::placeholder,#phone::placeholder{
+    color: rgba(255, 255, 255, 0.604);
+}
+
+#message{
+    font-size: large;
+    width: 100%;
+    margin-top: 5%;
+}
+#button_submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 180%;
+    height: 50px;
+    background-color: rgba(137, 43, 226, 0.493);
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#button_submit:hover{
+    background-color: rgba(137, 43, 226, 0.991);
+}
+.contact-loca{
+    background-color: rgba(255, 255, 255, 0.684);
+    border: 2x solid black;
+    font-size: larger;
+    border-left: none;
+    border: 1px solid white;
+    color: black;
+    width: 50%;
+    height: 716px;
+
+    text-align: left;
+    position: absolute;
+    top: 128px;
+    right: 0;
+}
+ul > li{
+    list-style: none;
+}
+.locaa{
+    margin-left: 5%;
+}
+.loca{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*for laptops only*/
+@media only screen and (min-width:600px) and (max-width: 1050px) {
+    .nav_img{
+        background-image:  url(flogo.png);
+        width: 100%;
+        height: 60px;
+    }
+    #jo{
+        background-image: url(blog-01.jpg);
+        background-size: 150%;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    #con{
+        text-align: center;
+    }
+    #form{
+        width: 65%;
+        margin-top: 2%;
+        
+    }
+    #first_name,#lname,#email,#phone{
+        width: 140%;
+        height: 50px;
+        font-size: large;
+        background-color: transparent;
+        border: none;
+        color: white;
+        border-bottom: 2px solid black;
+        border-radius: 5px;
+        
+    }
+    #message{
+        font-size: large;
+        width: 140%;
+    
+    }
+    .contact-loca{
+        opacity: 0;
+    }
+        #button_submit{
+
+            width: 150%;
+            height: 50px;
+            
+        }
+        
+    
+}
+@media only screen and (min-width:450px) and (max-width: 599px) {
+    .nav_img{
+        background-image:  url(flogo.png);
+        width: 100%;
+        height: 60px;
+    }
+    #jo{
+        background-image: url(blog-01.jpg);
+        background-size: 200%;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    #con{
+        text-align: center;
+    }
+    #form{
+        width: 90%;
+        margin-top: 2%;
+        
+    }
+    #first_name,#lname,#email,#phone{
+        width: 80%;
+        height: 50px;
+        font-size: large;
+        background-color: transparent;
+        border: none;
+        color: white;
+        border-bottom: 2px solid black;
+        border-radius: 5px;
+        
+    }
+    #message{
+        font-size: large;
+        width: 90%;
+    
+    }
+    .contact-loca{
+        display: none;
+    }
+        #button_submit{
+
+            width: 100%;
+            height: 50px;
+            
+        }
+        
+    
+}
+@media only screen and (min-width:0px) and (max-width: 449px) {
+
+    .nav_img{
+        background-image:  url(flogo.png);
+        width: 100%;
+        height: 50px;
+    }
+    #jo{
+        background-image: url(blog-01.jpg);
+        background-size: 300%;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    #con{
+        text-align: center;
+    }
+    #form{
+        width: 100%;
+        margin-top: 2%;
+        
+    }
+    #first_name,#lname,#email,#phone{
+        width: 80%;
+        height: 50px;
+        font-size: large;
+        background-color: transparent;
+        border: none;
+        color: white;
+        border-bottom: 2px solid black;
+        border-radius: 5px;
+        
+    }
+    #message{
+        font-size: large;
+        width: 90%;
+    
+    }
+    .contact-loca{
+        display: none;
+    }
+        #button_submit{
+
+            width: 95%;
+            height: 50px;
+            
+        }
+        
+    
+}
